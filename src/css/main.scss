@@ -1,1 +1,18 @@
 /* Your SCSS here. */
+.header {
+    background-color: #f8f9fa;
+    padding: 5px;
+    font-size: 24px;
+    color: #343a40;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+}
