@@ -1,28 +1,65 @@
 /* Your SCSS here. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: block;
+    background-color: #4c00a4;
+    color: white;
+    // flex-direction   : column;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.full-height {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-button {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    color: black;
+}
+
+.carousel-button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
 .header {
-    background-color: #f8f9fa;
+    background-color: #380376;
     padding: 5px;
-    font-size: 24px;
-    color: #343a40;
+    font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 
 .footer {
-    background-color: #f1f1f1;
+    background-color: #380376;
     padding: 10px;
     text-align: center;
-    font-size: 14px;
-    color: #6c757d;
+    font-size: 1vw;
+    position: relative;
 }
 
 // Music Styles
 
 .icon {
-    width: 50px;
-    height: 50px;
-    fill: #007bff;
+    width: 5vw;
+    height: 5vw;
     margin-left: 10px;
 }
 
@@ -46,7 +83,38 @@
 .experience {
     width: 50vw;
     height: 5vw;
-    background-color: blue;
+    background-color: #6e16d3;
     margin: auto;
     border-radius: 5px;
+}
+
+.experience:hover {
+    background-color: #833bd5;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.carousel {
+    width: 100vw;
+    height: auto;
+}
+
+.site-card {
+    width: 24vw;
+    height: 40vh;
+    // pointer-events: none;
+    border-radius: 2vw;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.music-video {
+    display: block;
+    max-width: 100%;
+    height: auto    ;
 }

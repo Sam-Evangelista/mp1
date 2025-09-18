@@ -5,123 +5,129 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/528/528005.png" type="image/png">
     </head>
     <body>
         <header class="header">
-            <h1>
-                Samuel Evangelista
-            </h1>
+            <h1>Samuel Evangelista</h1>
 
-            <h2>
-                Experience
-            </h2>
+            <h2>Experience</h2>
 
-            <h2>
-                Projects
-            </h2>
+            <h2>Projects</h2>
 
-            <h2>
-                Music
-            </h2>
+            <h2>Music</h2>
         </header>
 
-        <!-- Image Carousel -->
-        <div>
-            <img>
-        </div>
-
-        
-        <h1>
-            Experience
-        </h1>
-
-        <!-- Experience -->
-        <div class="experience-container">
-            <div class="experience">
-                <h1>FACT IT</h1>
+        <main>
+            <!-- Image Carousel -->
+            <div class="full-height">
+                <button class="carousel-button"> &lt; </button>
+                <img class="carousel" src="/assets/carousel/profile.jpg">
+                <button class="carousel-button"> &gt; </button>
+                <br></br>
             </div>
-            <div class="experience">
-                <h1>Course Assistant</h1>
-            </div>
-            <div class="experience">
-                <h1>Tech Team Leader</h1>
-            </div>
-            <div class="experience">
-                <h1>Webmaster</h1>
-            </div>
-        </div>
-        
-        
 
+            
+            
 
-        <!-- Projects Section -->
-        <h1>Projects</h1>
-
-        <div class="column-container">
-            <div>
-                <h1>JolliBuy</h1>
-                <embed scrolling="no" src="https://jollibuy.vercel.app/" style="width: 500px; height: 500px;">
-            </div>
-            <div>
-                <h1>FACT Website</h1>
-                <embed src="https://fact.psauiuc.org/" style="width: 500px; height: 500px;">
-            </div>
-            <div>
-                <h1>PSA Website</h1>
-                <embed src="https://psauiuc.vercel.app/" style="width: 500px; height: 500px;">
-            </div>
-            <div>
-                <h1>Random Music Generator</h1>
-                <embed src="https://rhythmrng.vercel.app/" style="width: 500px; height: 500px;">
-            </div>
-        </div>
-
-        <!-- Music Section -->
-        <h1>
-            Music
-        </h1>
-        
-        
-        <video>
-            <!-- <source src=""> -->
-        </video>
-
-
-        <!-- Three Column Information Section -->
-        <div class="column-container">
-            <div class="column">
-                <img class="icon" src="/assets/microphone.png">
-                <h1>Vocalist</h1>
-                <p>As a member of the musical subgroup of the Philippine Student's Association I have been a vocalist for 2 years.</p>
+            <!-- Experience -->
+            <div class="full-height">
+                <h1>Experience</h1>
+                <div class="experience-container">
+                    <div class="experience">
+                        <h1>FACT IT</h1>
+                    </div>
+                    <div class="experience">
+                        <h1>Course Assistant</h1>
+                    </div>
+                    <div class="experience">
+                        <h1>Tech Team Leader</h1>
+                    </div>
+                    <div class="experience">
+                        <h1>Webmaster</h1>
+                    </div>
+                </div>
             </div>
             
-            <div class="column">
-                <img class="icon" src="/assets/piano.png">
-                <h1>Pianist</h1>
-                <p>I have been playing the piano for 10 years and have experience in both classical and contemporary music.</p>
+
+
+            <!-- Projects Section -->
+
+            <div class="full-height">
+                <h1>Projects</h1>
+                <div class="column-container">
+                    <div class="card">
+                        <h1>JolliBuy</h1>
+                        <iframe scrolling="no" src="https://jollibuy.vercel.app/" class="site-card"></iframe>
+                    </div>
+                    <div class="card">
+                        <h1>FACT Website</h1>
+                        <iframe scrolling="no" src="https://fact.psauiuc.org/" class="site-card"></iframe>
+                    </div>
+                    <div class="card">
+                        <h1>PSA Website</h1>
+                        <iframe scrolling="no" src="https://psauiuc.vercel.app/" class="site-card"></iframe>
+                    </div>
+                    <div class="card">
+                        <h1>Random Music Generator</h1>
+                        <iframe scrolling="no" src="https://rhythmrng.vercel.app/" class="site-card"></iframe>
+                    </div>
+                </div>
             </div>
+
+            <!-- Music Section -->
             
-            <div class="column">
-                <img class="icon" src="/assets/guitar.png">
-                <h1>Guitarist</h1>
-                <p>I started learning how to play guitar over the summer.</p>
+            
+            
+            
+
+
+            
+            <div class="full-height">
+                <h1>
+                    Music
+                </h1>
+
+                <video controls class="music-video">
+                    <source src="/assets/music.mp4" type="video/mp4">
+                </video>
+
+                <!-- Three Column Information Section -->
+                <div class="column-container">
+                    <div class="column">
+                        <img class="icon" src="/assets/microphone.png">
+                        <h1>Vocalist</h1>
+                        <p>As a member of the musical subgroup of the Philippine Student's Association I have been a vocalist for 2 years.</p>
+                    </div>
+                    
+                    <div class="column">
+                        <img class="icon" src="/assets/piano.png">
+                        <h1>Pianist</h1>
+                        <p>I have been playing the piano for 10 years and have experience in both classical and contemporary music.</p>
+                    </div>
+                    
+                    <div class="column">
+                        <img class="icon" src="/assets/guitar.png">
+                        <h1>Guitarist</h1>
+                        <p>I started learning how to play guitar over the summer.</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </main>
 
         <footer class="footer">
             <div>
-                
-            <a href="https://www.instagram.com/sam.eva.cs/?hl=en">
-                <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-fZXMnVlqwpdBfhTSnOgW0F9gT6gDMZXfGQ&s">
-            </a>
+                <a href="https://www.instagram.com/sam.eva.cs/?hl=en">
+                    <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-fZXMnVlqwpdBfhTSnOgW0F9gT6gDMZXfGQ&s">
+                </a>
 
-            <a href="https://www.linkedin.com/in/samevangelista/">
-                <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJQcThrVQw9sab54dutfCQcfwmQ4D0HbrcQ&s"></img>
-            </a>
-                
-            <a href="https://github.com/Sam-Evangelista">
-                <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnjOA7UAsqWXIcxdvLa54bjWdL9Pd0D98Mg&s"></img>
-            </a>
+                <a href="https://www.linkedin.com/in/samevangelista/">
+                    <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJQcThrVQw9sab54dutfCQcfwmQ4D0HbrcQ&s"></img>
+                </a>
+                    
+                <a href="https://github.com/Sam-Evangelista">
+                    <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnjOA7UAsqWXIcxdvLa54bjWdL9Pd0D98Mg&s"></img>
+                </a>
             </div>    
             <p>Made by Samuel Evangelista © 2025</p>
         </footer>
