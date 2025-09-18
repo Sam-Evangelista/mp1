@@ -16,3 +16,37 @@
     font-size: 14px;
     color: #6c757d;
 }
+
+// Music Styles
+
+.icon {
+    width: 50px;
+    height: 50px;
+    fill: #007bff;
+    margin-left: 10px;
+}
+
+.column-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    max-width: 10vw;
+}
+
+.experience-container {
+    text-align: center;
+}
+
+.experience {
+    width: 50vw;
+    height: 5vw;
+    background-color: blue;
+    margin: auto;
+    border-radius: 5px;
+}
