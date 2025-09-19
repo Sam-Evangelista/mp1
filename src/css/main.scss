@@ -11,6 +11,10 @@ html, body {
 }
 
 h1 {
+    font-size: 2.5vw;
+}
+
+h2 {
     font-size: 2vw;
 }
 
@@ -42,8 +46,20 @@ main {
     font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
+}
+
+.left-header {
+    margin-left: 2vw;
+}
+
+.right-header {
+    display: flex;
+    // padding: 5px;
+    gap: 10vw;
+    margin-right: 2vw;
 }
 
 
@@ -86,6 +102,10 @@ main {
     background-color: #6e16d3;
     margin: auto;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
 }
 
 .experience:hover {
@@ -118,3 +138,4 @@ main {
     max-width: 100%;
     height: auto    ;
 }
+
