@@ -1,10 +1,42 @@
 document.body.addEventListener('scroll',()=>{
   const header = document.getElementById("navbar");
 
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+
+  const expheader = document.getElementById("experience-header");
+  const projectheader = document.getElementById("projects-header");
+  const musicheader = document.getElementById("music-header");
+
+
+  const exppos = document.getElementById('experience-text').offsetTop;
+  const projpos = document.getElementById('projects-text').offsetTop;
+  const musicpos = document.getElementById('music-text').offsetTop;
+  
+
+  const scrollTop =
+    document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (scrollTop > 80) {
     header.style.padding = "5px";
   } else {
     header.style.padding = "100px";
+  }
+
+  if (scrollTop >= musicpos) {
+    musicheader.style.backgroundColor = "#833bd5";
+  } else {
+    musicheader.style.backgroundColor = "";
+  }
+
+  if (scrollTop >= projpos && scrollTop < musicpos) {
+    projectheader.style.backgroundColor = "#833bd5";
+  } else {
+    projectheader.style.backgroundColor = "";
+  }
+
+  if (scrollTop >= exppos && scrollTop < projpos) {
+    expheader.style.backgroundColor = "#833bd5";
+  } else {
+    expheader.style.backgroundColor = "";
   }
 })
 
