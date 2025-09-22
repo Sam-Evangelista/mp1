@@ -1,16 +1,12 @@
+const header = document.getElementById("navbar");
+const expheader = document.getElementById("experience-header");
+const projectheader = document.getElementById("projects-header");
+const musicheader = document.getElementById("music-header");
+const exppos = document.getElementById('experience-text').offsetTop - header.offsetHeight;
+const projpos = document.getElementById('projects-text').offsetTop - header.offsetHeight;
+const musicpos = document.getElementById('music-text').offsetTop - header.offsetHeight;
+
 document.body.addEventListener('scroll',()=>{
-  const header = document.getElementById("navbar");
-
-
-  const expheader = document.getElementById("experience-header");
-  const projectheader = document.getElementById("projects-header");
-  const musicheader = document.getElementById("music-header");
-
-
-  const exppos = document.getElementById('experience-text').offsetTop;
-  const projpos = document.getElementById('projects-text').offsetTop;
-  const musicpos = document.getElementById('music-text').offsetTop;
-  
 
   const scrollTop =
     document.documentElement.scrollTop || document.body.scrollTop;
@@ -135,4 +131,25 @@ rightbtn.onclick = function() {
     carouselimg.src = "/assets/carousel/2.JPG";
   }
   
+}
+
+let expbtn = document.getElementById("experience-header");
+
+expbtn.onclick = function() {
+  document.body.scrollTo(0,exppos);
+  expheader.style.backgroundColor = "#833bd5";
+}
+
+let projectsbtn = document.getElementById("projects-header");
+
+projectsbtn.onclick = function() {
+  document.body.scrollTo(0,projpos);
+  projectheader.style.backgroundColor = "#833bd5";
+}
+
+let musicbtn = document.getElementById("music-header");
+
+musicbtn.onclick = function() {
+  document.body.scrollTo(0,musicpos);
+  musicheader.style.backgroundColor = "#833bd5";
 }
