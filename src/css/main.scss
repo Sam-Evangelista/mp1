@@ -4,10 +4,19 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    display: block;
     background-color: #4c00a4;
+    background-repeat: no-repeat;
+    background-image: url("https://knowledge.wharton.upenn.edu/wp-content/uploads/2015/07/SAP-User-Experience-Feature-Image-900x387.jpg");
+    background-size: cover;
     color: white;
     scroll-behavior: smooth;
+    text-align: center;
+
+}
+
+.full-height {
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
@@ -33,12 +42,6 @@ button {
 
 main {
     flex-grow: 1;
-}
-
-.full-height {
-    height: 100%;
-    width: 100%;
-    text-align: center;
 }
 
 .carousel-button {
@@ -102,7 +105,7 @@ main {
     padding: 10px;
     text-align: center;
     font-size: 1vw;
-    position: relative;
+    // position: relative;
 }
 
 // Music Styles
@@ -218,4 +221,8 @@ main {
     align-items: center;
     margin-left: 2vw;
     width: 3vw;
+}
+
+.add-color {
+    background-color: #4c00a4;
 }
