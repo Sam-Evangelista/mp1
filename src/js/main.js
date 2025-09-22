@@ -1,17 +1,13 @@
-/* Your JS here. */
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+document.body.addEventListener('scroll',()=>{
   const header = document.getElementById("navbar");
 
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    header.style.fontSize = "50px";
-    header.style.padding = "30px 10px";
+    header.style.padding = "5px";
   } else {
-    header.style.fontSize = "80px";
-    header.style.padding = "80px 10px";
+    header.style.padding = "100px";
   }
-}
+})
+
 
 // factmodal
 let modal = document.getElementById("fact-modal");
@@ -23,12 +19,6 @@ factclose.onclick = function() {
 }
 factbtn.onclick = function() {
   modal.style.display = "flex";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
 }
 
 // camodal
@@ -43,12 +33,6 @@ cabtn.onclick = function() {
   camodal.style.display = "flex";
 }
 
-window.onclick = function(event) {
-  if (event.target == camodal) {
-    camodal.style.display = "none";
-  }
-}
-
 // techmodal
 let techmodal = document.getElementById("tech-modal");
 let techbtn = document.getElementById("tech-button");
@@ -60,12 +44,6 @@ techclose.onclick = function() {
 
 techbtn.onclick = function() {
   techmodal.style.display = "flex";
-}
-
-window.onclick = function(event) {
-  if (event.target == techmodal) {
-    techmodal.style.display = "none";
-  }
 }
 
 // techmodal
@@ -84,6 +62,15 @@ webbtn.onclick = function() {
 window.onclick = function(event) {
   if (event.target == webmodal) {
     webmodal.style.display = "none";
+  }
+  if (event.target == techmodal) {
+    techmodal.style.display = "none";
+  }
+  if (event.target == camodal) {
+    camodal.style.display = "none";
+  }
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 
