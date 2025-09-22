@@ -7,7 +7,6 @@ html, body {
     display: block;
     background-color: #4c00a4;
     color: white;
-    // flex-direction   : column;
 }
 
 h1 {
@@ -16,6 +15,11 @@ h1 {
 
 h2 {
     font-size: 2vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 button {
@@ -36,23 +40,45 @@ main {
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
-    color: black;
+    background-color: #380376;
+    border: none;
 }
 
 .carousel-button:hover {
-    background-color: lightgray;
+    background-color: #833bd5;
     cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-buttons {
+    position: absolute;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header {
     background-color: #380376;
-    padding: 5px;
+    // padding: 5px;
     font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .left-header {
@@ -117,11 +143,6 @@ main {
     cursor: pointer;
     transform: scale(1.05);
     transition: transform 0.3s ease;
-}
-
-.carousel {
-    width: 100vw;
-    height: auto;
 }
 
 .site-card {

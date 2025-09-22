@@ -1,14 +1,16 @@
 /* Your JS here. */
-console.log('Hello World!')
-
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.getElementsByClassName("header").style.padding = "30px 10px";
-    } else {
-      document.getElementsByClassName("header").style.padding = "80px 10px";
-    }
+  const header = document.getElementById("navbar");
+
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    header.style.fontSize = "50px";
+    header.style.padding = "30px 10px";
+  } else {
+    header.style.fontSize = "80px";
+    header.style.padding = "80px 10px";
+  }
 }
 
 // factmodal
@@ -83,4 +85,35 @@ window.onclick = function(event) {
   if (event.target == webmodal) {
     webmodal.style.display = "none";
   }
+}
+
+// carousel
+let leftbtn = document.getElementById("left-button");
+let rightbtn = document.getElementById("right-button");
+let carouselimg = document.getElementById("carousel-img");
+
+leftbtn.onclick = function() {
+  let name = carouselimg.src.split("/").pop();
+
+  if (name.toLowerCase() === "3.jpeg") {
+    carouselimg.src = "/assets/carousel/2.JPG";
+  } else if (name.toLowerCase() === "2.jpg") {
+    carouselimg.src = "/assets/carousel/1.jpg";
+  }
+  else {
+    carouselimg.src = "/assets/carousel/3.jpeg";
+  }
+}
+
+rightbtn.onclick = function() {
+  let name = carouselimg.src.split("/").pop();
+
+  if (name.toLowerCase() === "2.jpg") {
+    carouselimg.src = "/assets/carousel/3.jpeg";
+  } else if (name.toLowerCase() === "3.jpeg") {
+    carouselimg.src = "/assets/carousel/1.jpg";
+  } else {
+    carouselimg.src = "/assets/carousel/2.JPG";
+  }
+  
 }

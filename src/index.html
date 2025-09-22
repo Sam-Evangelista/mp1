@@ -8,7 +8,7 @@
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/528/528005.png" type="image/png">
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="navbar">
             <div class="left-header">
                 <h1>Samuel Evangelista</h1>
             </div>
@@ -26,10 +26,14 @@
         <main>
             <!-- Image Carousel -->
             <div class="full-height">
-                <button class="carousel-button"> &lt; </button>
-                <img class="carousel" src="/assets/carousel/profile.jpg">
-                <button class="carousel-button"> &gt; </button>
-                <br></br>
+                <div class="carousel">  
+                    <img class="carousel-img" id="carousel-img" src="/assets/carousel/1.jpg">
+                    <div class="carousel-buttons">
+                        <button class="carousel-button" id="left-button"> &lt; </button>
+                        <button class="carousel-button" id="right-button"> &gt; </button>
+                    </div>
+                    <br></br>
+                </div>
             </div>
 
             
@@ -128,22 +132,32 @@
             <div class="full-height">
                 <h1>Projects</h1>
                 <div class="column-container">
-                    <div class="card">
-                        <h2>JolliBuy</h2>
-                        <iframe scrolling="no" src="https://jollibuy.vercel.app/" class="site-card"></iframe>
-                    </div>
-                    <div class="card">
-                        <h2>FACT Website</h2>
-                        <iframe scrolling="no" src="https://fact.psauiuc.org/" class="site-card"></iframe>
-                    </div>
-                    <div class="card">
-                        <h2>PSA Website</h2>
-                        <iframe scrolling="no" src="https://psauiuc.vercel.app/" class="site-card"></iframe>
-                    </div>
-                    <div class="card">
-                        <h2>Random Music Generator</h2>
-                        <iframe scrolling="no" src="https://rhythmrng.vercel.app/" class="site-card"></iframe>
-                    </div>
+                    <a href="https://jollibuy.vercel.app/">
+                        <div class="card">
+                            <h2>JolliBuy</h2>
+                            <iframe scrolling="no" src="https://jollibuy.vercel.app/" class="site-card"></iframe>
+                        </div>
+                    </a>
+
+                    <a href="https://fact.psauiuc.org/">
+                        <div class="card">
+                            <h2>FACT Website</h2>
+                            <iframe scrolling="no" src="https://fact.psauiuc.org/" class="site-card"></iframe>
+                        </div>
+                    </a>
+                    
+                    <a href="https://psauiuc.vercel.app/">
+                        <div class="card">
+                            <h2>PSA Website</h2>
+                            <iframe scrolling="no" src="https://psauiuc.vercel.app/" class="site-card"></iframe>
+                        </div>
+                    </a>
+                    <a href="https://rhythmrng.vercel.app/">
+                        <div class="card">
+                            <h2>Random Music Generator</h2>
+                            <iframe scrolling="no" src="https://rhythmrng.vercel.app/" class="site-card"></iframe>
+                        </div>
+                    </a>
                 </div>
             </div>
 
