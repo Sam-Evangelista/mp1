@@ -1,4 +1,9 @@
 /* Your SCSS here. */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -6,21 +11,30 @@ html, body {
     overflow-x: hidden;
     background-color: #4c00a4;
     background-repeat: no-repeat;
-    background-image: url("https://knowledge.wharton.upenn.edu/wp-content/uploads/2015/07/SAP-User-Experience-Feature-Image-900x387.jpg");
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/b8/2f/4a/winter-garden.jpg?w=1200&h=1200&s=1");
     background-size: cover;
+    background-blend-mode: overlay;
     color: white;
     scroll-behavior: smooth;
     text-align: center;
-
 }
 
 .full-height {
     height: 100%;
     width: 100%;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    background-color: #4c00a4;
+}
+
+h1,h2,p {
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 2.5vw;
+    padding: 2vw;
 }
 
 h2 {
@@ -105,7 +119,7 @@ main {
     padding: 10px;
     text-align: center;
     font-size: 1vw;
-    // position: relative;
+    margin-top: 50vw;
 }
 
 // Music Styles
@@ -131,6 +145,10 @@ main {
 
 .experience-container {
     text-align: center;
+    // position: relative;
+    // top: 10vw;
+    margin-top: 10vw;
+    padding: auto;
 }
 
 .experience {
@@ -155,7 +173,6 @@ main {
 .site-card {
     width: 24vw;
     height: 40vh;
-    // pointer-events: none;
     border-radius: 2vw;
 }
 
@@ -225,4 +242,77 @@ main {
 
 .add-color {
     background-color: #4c00a4;
+    height: 100%;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .experience-container {
+        margin-top: 0vw;
+        padding-top: 10vw;
+    }
+    
+    .full-height {
+        height: 30%;
+    }
+
+    .site-card {
+        width: 20vw;
+        height: 10vh;
+        // margin: auto;
+        // margin-bottom: 5vw;
+    }
+
+    .footer {
+        font-size: 3vw;
+        margin-top: 80vw;
+    }
+
+    .carousel-button {
+        width: 8vw;
+        height: 8vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .experience-container {
+        margin-top: 13vh;
+    }
+
+    .site-card {
+        width: 24vw;
+        height: 30vh;
+        // margin: auto;
+        // margin-bottom: 5vw;
+    }
+    .full-height {
+        height: 75%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1025px) and (max-width: 1202px) {
+    .experience-container {
+        margin-top: 6vh;
+    }
+
+    .site-card {
+        width: 24vw;
+        height: 30vh;
+        // margin: auto;
+        // margin-bottom: 5vw;
+    }
+    .full-height {
+        height: 75%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}

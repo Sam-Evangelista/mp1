@@ -1,18 +1,21 @@
-const header = document.getElementById("navbar");
-const expheader = document.getElementById("experience-header");
-const projectheader = document.getElementById("projects-header");
-const musicheader = document.getElementById("music-header");
-const exppos = document.getElementById('experience-text').offsetTop - header.offsetHeight;
-const projpos = document.getElementById('projects-text').offsetTop - header.offsetHeight;
-const musicpos = document.getElementById('music-text').offsetTop - header.offsetHeight;
+let header = document.getElementById("navbar");
+let expheader = document.getElementById("experience-header");
+let projectheader = document.getElementById("projects-header");
+let musicheader = document.getElementById("music-header");
+let exppos = document.getElementById('experience-text').offsetTop - header.offsetHeight;
+let projpos = document.getElementById('projects-text').offsetTop - header.offsetHeight;
+let musicpos = document.getElementById('music-text').offsetTop - header.offsetHeight;
 
 document.body.addEventListener('scroll',()=>{
+  exppos = document.getElementById('experience-text').offsetTop - header.offsetHeight;
+  projpos = document.getElementById('projects-text').offsetTop - header.offsetHeight;
+  musicpos = document.getElementById('music-text').offsetTop - header.offsetHeight;
 
   const scrollTop =
     document.documentElement.scrollTop || document.body.scrollTop;
 
   if (scrollTop > 80) {
-    header.style.padding = "5px";
+    header.style.padding = "30px";
   } else {
     header.style.padding = "100px";
   }
@@ -35,6 +38,27 @@ document.body.addEventListener('scroll',()=>{
     expheader.style.backgroundColor = "";
   }
 })
+
+let expbtn = document.getElementById("experience-header");
+
+expbtn.onclick = function() {
+  document.body.scrollTo(0,exppos);
+  expheader.style.backgroundColor = "#833bd5";
+}
+
+let projectsbtn = document.getElementById("projects-header");
+
+projectsbtn.onclick = function() {
+  document.body.scrollTo(0,projpos);
+  projectheader.style.backgroundColor = "#833bd5";
+}
+
+let musicbtn = document.getElementById("music-header");
+
+musicbtn.onclick = function() {
+  document.body.scrollTo(0,musicpos);
+  musicheader.style.backgroundColor = "#833bd5";
+}
 
 
 // factmodal
@@ -131,25 +155,4 @@ rightbtn.onclick = function() {
     carouselimg.src = "/assets/carousel/2.JPG";
   }
   
-}
-
-let expbtn = document.getElementById("experience-header");
-
-expbtn.onclick = function() {
-  document.body.scrollTo(0,exppos);
-  expheader.style.backgroundColor = "#833bd5";
-}
-
-let projectsbtn = document.getElementById("projects-header");
-
-projectsbtn.onclick = function() {
-  document.body.scrollTo(0,projpos);
-  projectheader.style.backgroundColor = "#833bd5";
-}
-
-let musicbtn = document.getElementById("music-header");
-
-musicbtn.onclick = function() {
-  document.body.scrollTo(0,musicpos);
-  musicheader.style.backgroundColor = "#833bd5";
 }
