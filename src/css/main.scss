@@ -1,4 +1,8 @@
 /* Your SCSS here. */
+$custom-purple: #4c00a4;
+$highlight-purple: #833bd5;
+$dark-purple: #380376;
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -9,7 +13,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #4c00a4;
+    background-color: $custom-purple;
     background-repeat: no-repeat;
     background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/b8/2f/4a/winter-garden.jpg?w=1200&h=1200&s=1");
     background-size: cover;
@@ -24,7 +28,7 @@ html, body {
     width: 100%;
     animation-name: fadeIn;
     animation-duration: 4s;
-    background-color: #4c00a4;
+    background-color: $custom-purple;
 }
 
 h1,h2,p {
@@ -62,12 +66,12 @@ main {
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
-    background-color: #380376;
+    background-color: $dark-purple;
     border: none;
 }
 
 .carousel-button:hover {
-    background-color: #833bd5;
+    background-color: $highlight-purple;
     cursor: pointer;
 }
 
@@ -92,7 +96,7 @@ main {
 }
 
 .header {
-    background-color: #380376;
+    background-color: $dark-purple;
     padding: 100px;
     display: flex;
     justify-content: space-between;
@@ -115,7 +119,7 @@ main {
 
 
 .footer {
-    background-color: #380376;
+    background-color: $dark-purple;
     padding: 10px;
     text-align: center;
     font-size: 1vw;
@@ -164,7 +168,7 @@ main {
 }
 
 .experience:hover {
-    background-color: #833bd5;
+    background-color: $highlight-purple;
     cursor: pointer;
     transform: scale(1.05);
     transition: transform 0.3s ease;
@@ -204,7 +208,7 @@ main {
 }
 
 .modal-content {
-    background-color: #4c00a4;
+    background-color: $custom-purple;
     max-width: 80%;
     max-height: 100vh;
     padding: 20px;
@@ -241,7 +245,7 @@ main {
 }
 
 .add-color {
-    background-color: #4c00a4;
+    background-color: $custom-purple;
     height: 100%;
 }
 
