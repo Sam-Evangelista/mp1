@@ -1,6 +1,6 @@
-import * as img1 from '../assets/carousel/1.jpg';
-import * as img2 from '../assets/carousel/2.jpg';
-import * as img3 from '../assets/carousel/3.jpg';
+import img1 from '../assets/carousel/1.jpg';
+import img2 from '../assets/carousel/2.jpg';
+import img3 from '../assets/carousel/3.jpg';
 
 let header = document.getElementById("navbar");
 let expheader = document.getElementById("experience-header");
@@ -131,32 +131,21 @@ window.onclick = function(event) {
 }
 
 // carousel
-let leftbtn = document.getElementById("left-button");
-let rightbtn = document.getElementById("right-button");
-let carouselimg = document.getElementById("carousel-img");
+const leftbtn = document.getElementById('left-button');
+const rightbtn = document.getElementById('right-button');
+const carouselimg = document.getElementById('carousel-img');
+
+const imgs = [img1, img2, img3];
+let i = 0;
+
+carouselimg.src = imgs[i];
 
 leftbtn.onclick = function() {
-  let name = carouselimg.src;
-
-  if (name === img3.default) {
-    carouselimg.src = img2.default;
-  } else if (name.toLowerCase() === img2.default) {
-    carouselimg.src = img1.default;
-  }
-  else {
-    carouselimg.src = img3.default;
-  }
-}
+  i = (i - 1 + imgs.length) % imgs.length;
+  carouselimg.src = imgs[i];
+};
 
 rightbtn.onclick = function() {
-  let name = carouselimg.src
-
-  if (name === img2.default) {
-    carouselimg.src = img3.default;
-  } else if (name === img3.default) {
-    carouselimg.src = img1.default;
-  } else {
-    carouselimg.src = img2.default;
-  }
-  
-}
+  i = (i + 1) % imgs.length;
+  carouselimg.src = imgs[i];
+};
