@@ -23,6 +23,8 @@ html, body {
     text-align: center;
 }
 
+
+
 .full-height {
     height: 100%;
     width: 100%;
@@ -106,8 +108,9 @@ main {
     z-index: 10;
 }
 
-.left-header {
+.left-header h1 {
     margin-left: 2vw;
+    font-size: 4vw;
 }
 
 .right-header {
@@ -115,6 +118,9 @@ main {
     // padding: 5px;
     gap: 10vw;
     margin-right: 2vw;
+    h2 {
+        font-size: 3vw;
+    }
 }
 
 

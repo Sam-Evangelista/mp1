@@ -3,6 +3,9 @@ import img2 from '../assets/carousel/2.jpg';
 import img3 from '../assets/carousel/3.jpg';
 
 let header = document.getElementById("navbar");
+let nameheader = document.getElementById("name-header");
+
+
 let expheader = document.getElementById("experience-header");
 let projectheader = document.getElementById("projects-header");
 let musicheader = document.getElementById("music-header");
@@ -20,8 +23,16 @@ document.body.addEventListener('scroll',()=>{
 
   if (scrollTop > 80) {
     header.style.padding = "30px";
+    nameheader.style.fontSize = "2.5vw";
+    expheader.style.fontSize = "2vw";
+    projectheader.style.fontSize = "2vw";
+    musicheader.style.fontSize = "2vw";
   } else {
     header.style.padding = "100px";
+    nameheader.style.fontSize = "4vw";
+    expheader.style.fontSize = "3vw";
+    projectheader.style.fontSize = "3vw";
+    musicheader.style.fontSize = "3vw";
   }
 
   if (scrollTop >= musicpos) {
