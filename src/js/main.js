@@ -1,3 +1,7 @@
+import * as img1 from '../assets/carousel/1.jpg';
+import * as img2 from '../assets/carousel/2.jpg';
+import * as img3 from '../assets/carousel/3.jpg';
+
 let header = document.getElementById("navbar");
 let expheader = document.getElementById("experience-header");
 let projectheader = document.getElementById("projects-header");
@@ -132,27 +136,27 @@ let rightbtn = document.getElementById("right-button");
 let carouselimg = document.getElementById("carousel-img");
 
 leftbtn.onclick = function() {
-  let name = carouselimg.src.split("/").pop();
+  let name = carouselimg.src;
 
-  if (name.toLowerCase() === "3.jpeg") {
-    carouselimg.src = "/assets/carousel/2.JPG";
-  } else if (name.toLowerCase() === "2.jpg") {
-    carouselimg.src = "/assets/carousel/1.jpg";
+  if (name === img3.default) {
+    carouselimg.src = img2.default;
+  } else if (name.toLowerCase() === img2.default) {
+    carouselimg.src = img1.default;
   }
   else {
-    carouselimg.src = "/assets/carousel/3.jpeg";
+    carouselimg.src = img3.default;
   }
 }
 
 rightbtn.onclick = function() {
-  let name = carouselimg.src.split("/").pop();
+  let name = carouselimg.src
 
-  if (name.toLowerCase() === "2.jpg") {
-    carouselimg.src = "/assets/carousel/3.jpeg";
-  } else if (name.toLowerCase() === "3.jpeg") {
-    carouselimg.src = "/assets/carousel/1.jpg";
+  if (name === img2.default) {
+    carouselimg.src = img3.default;
+  } else if (name === img3.default) {
+    carouselimg.src = img1.default;
   } else {
-    carouselimg.src = "/assets/carousel/2.JPG";
+    carouselimg.src = img2.default;
   }
   
 }
